@@ -1,0 +1,65 @@
+{
+  "name": "cat-energy.loc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp4-run-sequence": "^1.0.1",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "browser-sync": "^2.26.7",
+    "eslint": "^7.4.0",
+    "eslint-config-htmlacademy": "^0.5.2",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "^2.0.1",
+    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-terser": "^1.2.0",
+    "gulp-w3c-html-validator": "^2.0.1",
+    "gulp-webp": "^4.0.1"
+  },
+  "scripts": {
+    "test": "npm run editorconfig && npm run stylelint",
+    "stylelint": "stylelint \"src/styles/**/*.scss\" --syntax scss",
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitaly-FutureDeveloper/cat-enrgy.loc.git"
+  },
+  "author": "VitaliyFutureDeveloper",
+  "license": "Free",
+  "bugs": {
+    "url": "https://github.com/Vitaly-FutureDeveloper/cat-enrgy.loc/issues"
+  },
+  "homepage": "https://github.com/Vitaly-FutureDeveloper/cat-enrgy.loc#readme"
+}

@@ -1,0 +1,31 @@
+include ../untils/variables
+include ../untils/mixins
+
+doctype html
+//
+	*
+	* Разработчик вёрстки: Vitali-Future-Developer
+	* Макет: vasortimente — 2 тестовых блока
+	* Дизайн макета, для вёрстки: vasortimente
+	* Описание: Тестовое задание в компанию vasortimente
+	* Сделан для компании vasortimente как тестовое задание на вакансию HTML-верстальщик.
+
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		//
+			Оптимизация предзагрузки стилей
+		link(rel="preload" href="css/style.css" as="style")
+		//
+
+		link(rel="stylesheet" href="css/style.css")
+
+		title vasortimente
+	body
+		include ./header
+		block content
+		include ./footer
+		script(src="js/main.min.js")
+
