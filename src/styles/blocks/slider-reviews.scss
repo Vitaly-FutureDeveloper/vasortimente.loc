@@ -1,7 +1,84 @@
 .slider-rewiews__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 	margin-bottom: 45px;
 }
 
+.slider-rewiews__title{
+	position: relative;
+
+	padding-left: 190px;
+
+	&::before{
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 279px;
+		height: 50px;
+
+		background-color: #1f3870;
+		background-image: linear-gradient(to right, #ed8439 0%, #1f3870 100%);
+		border-radius: 10px;
+
+		transform: skewX(-45deg);
+
+		margin-left: -130px;
+	}
+}
+
+.slider-rewiews__dots{
+	position: relative;
+
+	display: flex;
+	margin-right: 190px;
+}
+.slider-rewiews__dots-text{
+	padding: 0 20px;
+}
+.slider-rewiews__dot-1{
+	position: relative;
+
+	cursor: pointer;
+	padding-right: 110px;
+
+	&::before{
+		content: "";
+
+		position: absolute;
+		top: 30%;
+		left: 0;
+
+		width: 88px;
+		height: 20px;
+
+		background-image: url("../img/arrow_left.png");
+	}
+}
+
+.slider-rewiews__dot-2{
+	position: relative;
+
+	cursor: pointer;
+	padding-left: 110px;
+
+	&::after{
+		content: "";
+
+		position: absolute;
+		top: 30%;
+		right: 0;
+
+		width: 88px;
+		height: 20px;
+
+		background-image: url("../img/arrow_right.png");
+	}
+}
 
 
 .rewiew__client-photo{

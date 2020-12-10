@@ -252,6 +252,98 @@ a
 	text-align: left;
 }
 
+.slider-rewiews__header
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+.slider-rewiews__title
+{
+	position: relative;
+	padding-left: 190px;
+}
+
+.slider-rewiews__title::before
+{
+	background: -webkit-gradient(linear,left top,right top,from(#ed8439),to(#1f3870)) #1f3870;
+	background: linear-gradient(to right,#ed8439 0,#1f3870 100%) #1f3870;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 279px;
+	height: 50px;
+	border-radius: 10px;
+	-webkit-transform: skewX(-45deg);
+	transform: skewX(-45deg);
+	margin-left: -130px;
+}
+
+.slider-rewiews__dots
+{
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-right: 190px;
+}
+
+.slider-rewiews__dots-text
+{
+	padding: 0 20px;
+}
+
+.slider-rewiews__dot-1
+{
+	position: relative;
+	cursor: pointer;
+	padding-right: 110px;
+}
+
+.slider-rewiews__dot-1::before
+{
+	background: url(../img/arrow_left.png);
+	content: "";
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 88px;
+	height: 20px;
+}
+
+.slider-rewiews__dot-2
+{
+	position: relative;
+	cursor: pointer;
+	padding-left: 110px;
+}
+
+.slider-rewiews__dot-2::after
+{
+	background: url(../img/arrow_right.png);
+	content: "";
+	position: absolute;
+	top: 30%;
+	right: 0;
+	width: 88px;
+	height: 20px;
+}
+
+.rewiew__client-photo
+{
+	width: 100px;
+	height: 100px;
+}
+
 .rewiews-list
 {
 	margin: 0;
@@ -259,8 +351,23 @@ a
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: -40px;
 	padding: 30px;
+	opacity: .5;
+}
+
+.rewiews-list--none
+{
+	display: none;
+}
+
+.rewiews-list--active
+{
+	opacity: 1;
+}
+
+.rewiew
+{
+	padding: 60px 40px;
 }
 
 .rewiew__client
@@ -291,25 +398,23 @@ a
 
 .stars
 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	padding-top: 10px;
 }
 
-.stars__item
+.stars__item:not(last-child)
 {
-	padding: 20px;
+	padding-right: 20px;
 }
 
-.slider-rewiews__header
+.stars__item--active polygon
 {
-	margin-bottom: 45px;
-}
-
-.rewiew__client-photo
-{
-	width: 100px;
-	height: 100px;
+	fill: #ed8439;
 }
 
 .main-footer
