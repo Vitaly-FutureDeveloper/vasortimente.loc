@@ -205,26 +205,9 @@ html
 
 body
 {
-	min-width: 320px;
 	margin: 0 auto;
 	padding: auto;
 	font-family: "Exo 2- Light Italic";
-}
-
-@media (min-width:768px)
-{
-	body
-	{
-		min-width: 768px;
-	}
-}
-
-@media (min-width:1440px)
-{
-	body
-	{
-		min-width: 1440px;
-	}
 }
 
 img
@@ -251,6 +234,82 @@ a
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.title
+{
+	font: normal 500 36px/normal "Exo 2";
+	color: #1f3870;
+	letter-spacing: normal;
+	text-align: left;
+}
+
+.text
+{
+	font: italic 400 16px/26px "Exo 2- Light Italic";
+	color: #333;
+	letter-spacing: normal;
+	text-align: left;
+}
+
+.rewiews-list
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: -40px;
+	padding: 30px;
+}
+
+.rewiew__client
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.rewiew__title
+{
+	font: normal 400 20px/26px "Exo 2";
+	color: #333;
+	letter-spacing: normal;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.rewiew__title-wrapper
+{
+	margin-left: 30px;
+}
+
+.stars
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.stars__item
+{
+	padding: 20px;
+}
+
+.slider-rewiews__header
+{
+	margin-bottom: 45px;
+}
+
+.rewiew__client-photo
+{
+	width: 100px;
+	height: 100px;
 }
 
 .main-footer

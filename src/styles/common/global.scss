@@ -14,20 +14,20 @@ html{
 }
 
 body{
-	min-width: $mediaWidthMobile;
+	//min-width: $mediaWidthMobile;
 
 	margin: 0 auto;
 	padding: auto;
 
 	font-family: "Exo 2- Light Italic";
-
+/*
 	@include media-tablet {
 		min-width: $mediaWidthTablet;
 	}
 	
 	@include media-laptop {
 		min-width: $mediaWidthLaptop;
-	}
+	}*/
 }
 
 img{

@@ -1,0 +1,27 @@
+-
+	var clientPhoto = [
+		"img/photo-user.webp",
+		"img/photo-user.png",
+	];
+
+section.slider-rewiews
+	header.slider-rewiews__header
+		h2.slider-rewiews__title.title Отзывы постоянных клиентов
+	ul.rewiews-list
+		- for(var li = 0; li < 3; li++)
+			li.rewiews-list__item
+				article.rewiew
+					.rewiew__client
+						.rewiew__photo-wrapper
+							picture
+								source(type="image/webp" srcset=`${clientPhoto[0]}`)
+								img.rewiew__client-photo(src=`${clientPhoto[1]}` width="100" height="100" alt="Фото")
+						.rewiew__title-wrapper
+							h3.rewiew__title Илья <br> Константинов
+							.rewiew__rating
+								ul.stars
+									- for(var si = 0; si < 5; si++)
+										li.stars__item
+					p.rewiew__text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+
+	.slider-rewiews__snippet 0

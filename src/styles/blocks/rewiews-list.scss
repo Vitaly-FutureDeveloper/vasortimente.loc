@@ -1,0 +1,9 @@
+.rewiews-list{
+	@include no-list-style;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: -40px;
+
+	padding: 30px;
+}
