@@ -8,27 +8,30 @@ section.slider-rewiews
 	header.slider-rewiews__header
 		h2.slider-rewiews__title.title Отзывы постоянных клиентов
 		.slider-rewiews__dots
-			.slider-rewiews__dot-1
-			p.slider-rewiews__dots-text 1 / 6
-			.slider-rewiews__dot-2
+			.slider-rewiews__prev
+			p.slider-rewiews__dots-text <span class="slider-rewiews__from">1</span> / <span class="slider-rewiews__to">6</span>
+			.slider-rewiews__next
 	ul.rewiews-list
-		- for(var li = 0; li < 3; li++)
-			li.rewiews-list__item
-				article.rewiew
-					.rewiew__client
-						.rewiew__photo-wrapper
-							picture
-								source(type="image/webp" srcset=`${clientPhoto[0]}`)
-								img.rewiew__client-photo(src=`${clientPhoto[1]}` width="100" height="100" alt="Фото")
-						.rewiew__title-wrapper
-							h3.rewiew__title Илья <br> Константинов
-							.rewiew__rating
-								ul.stars
-									- for(var si = 0; si < 5; si++)
-										li.stars__item.stars__item--active
-											//+star
-											svg(width="14" height="14")
-												polygon(points="7,0 9,6 14,6 11,9 14,14 7,11.5 0,14 4,9 0,6.6 4,6.6" fill="transparent" stroke="#ed8439" stroke-width="1")
-					p.rewiew__text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+		li.rewiews-list__item
+			- for(var li = 0; li < 6; li++)
+				li.rewiews-list__item
+					article.rewiew
+						.rewiew__client
+							.rewiew__photo-wrapper
+								picture
+									source(type="image/webp" srcset=`${clientPhoto[0]}`)
+									img.rewiew__client-photo(src=`${clientPhoto[1]}` width="100" height="100" alt="Фото")
+							.rewiew__title-wrapper
+								span(style="position:absolute;")= `${li}`
+								h3.rewiew__title Илья <br> Константинов
+								.rewiew__rating
+									ul.stars
+										- for(var si = 0; si < 5; si++)
+											li.stars__item.stars__item--active
+												//+star
+												svg(width="14" height="14")
+													polygon(points="7,0 9,6 14,6 11,9 14,14 7,11.5 0,14 4,9 0,6.6 4,6.6" fill="transparent" stroke="#ed8439" stroke-width="1")
+						p.rewiew__text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 
+			li.rewiews-list__item
 	.slider-rewiews__snippet 0

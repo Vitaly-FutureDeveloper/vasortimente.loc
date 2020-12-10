@@ -5,12 +5,17 @@
 	grid-template-columns: 1fr 1fr 1fr;
 
 	padding: 30px;
+}
+
+.rewiews-list__item{
+	transition: all 1s linear;
 	opacity: 0.5;
 
 	&--none{
 		display: none;
 	}
 	&--active{
+		transform: translateY(-15px);
 		opacity: 1;
 	}
 }

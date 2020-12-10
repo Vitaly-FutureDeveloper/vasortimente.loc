@@ -10,7 +10,7 @@
 const arrayFilesConcate = [
 	"src/scripts/components/global.js",
 	"src/scripts/components/trottle.js",
-
+	"src/scripts/interactive/slider.js",
 ];
 
 
