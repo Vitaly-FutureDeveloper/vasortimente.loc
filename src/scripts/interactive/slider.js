@@ -1,5 +1,7 @@
 (function () {
 
+
+
 	var slideIndex = 1;
 	var prev = document.querySelector('.slider-rewiews__prev');
 	var next = document.querySelector('.slider-rewiews__next');
@@ -20,7 +22,10 @@
 		if(n < 1)
 			slideIndex = slides.length - 2;
 
+
+
 		slides.forEach((item) => item.classList.add('rewiews-list__item--none'));
+		slides.forEach((item) => item.classList.remove('rewiews-list__item--inactive'));
 
 		slides[slideIndex].classList.remove('rewiews-list__item--none');
 
@@ -37,6 +42,8 @@
 
 		from.textContent = slideIndex;
 		to.textContent = slides.length - 2;
+
+		inactive();
 	}
 
 	/*
@@ -93,5 +100,23 @@
 			currentSlide(i)
 		});
 	}
+
+//
+	function inactive() {
+		var inactive = document.querySelectorAll('.rewiews-list__item--inactive');
+		console.log(inactive);
+		/*inactive.forEach(function(item) {
+			item.classList.remove('rewiew-left');
+			item.classList.remove('rewiew-right');
+		});*/
+		for(let i = 0; i < slides.length; i++){
+			slides[i].classList.remove('rewiew-left');
+			slides[i].classList.remove('rewiew-right');
+		}
+		inactive[0].classList.add('rewiew-left');
+		inactive[1].classList.add('rewiew-right');
+	}
+	inactive();
+
 
 })();

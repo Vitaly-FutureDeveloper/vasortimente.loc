@@ -1,4 +1,16 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html
+@font-face
+{
+	font-family: "Exo 2";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: local("Exo 2"),local("Exo 2 Regular"),local("Exo 2-Regular"),url(fonts/Exo2.0-Regular.otf) format("opentype");
+}
+
+@font-face
+{
+	font-family:"Exo 2";font-weight:400;font-style:italic;font-display:swap;src:local("Exo 2- Light Italic"),local("Exo 2-Light Italic"),local("Exo 2 - Light Italic"),url(fonts/Exo2.0-LightItalic.otf) format("opentype");
+}/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html
 {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -207,7 +219,7 @@ body
 {
 	margin: 0 auto;
 	padding: auto;
-	font-family: "Exo 2- Light Italic";
+	font-family: "Exo 2","Exo 2- Light Italic",OpenSans;
 }
 
 img
@@ -240,7 +252,7 @@ a
 {
 	font: normal 500 36px/normal "Exo 2";
 	color: #1f3870;
-	letter-spacing: normal;
+	letter-spacing: 2px;
 	text-align: left;
 }
 
@@ -299,6 +311,8 @@ a
 
 .slider-rewiews__dots-text
 {
+	font: 400 18px "Exo 2";
+	color: #828899;
 	padding: 0 20px;
 }
 
@@ -344,6 +358,47 @@ a
 	height: 100px;
 }
 
+.snippet
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.slider-rewiews__snippet
+{
+	position: relative;
+}
+
+.slider-rewiews__snippet::before
+{
+	background: radial-gradient(at top center,#d9dee5,#abafb4) #fff;
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 3px 7px rgba(0,0,0,.35);
+	box-shadow: 0 3px 7px rgba(0,0,0,.35);
+}
+
+.slider-rewiews__snippet::after
+{
+	background: #fff;
+	position: absolute;
+	content: "";
+	top: 6px;
+	left: 6px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+}
+
 .rewiews-list
 {
 	margin: 0;
@@ -357,8 +412,9 @@ a
 .rewiews-list__item
 {
 	position: relative;
-	-webkit-transition: all 1s linear;
-	transition: all 1s linear;
+	-webkit-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+	background: 0 0;
 	opacity: .5;
 }
 
@@ -372,6 +428,7 @@ a
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
 	opacity: 1;
+	z-index: 50;
 }
 
 .rewiews-list__item--inactive
@@ -380,12 +437,26 @@ a
 	transform: translateY(8px);
 }
 
+.rewiew-left
+{
+	-webkit-transform: translateX(40px);
+	transform: translateX(40px);
+}
+
+.rewiew-right
+{
+	-webkit-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+	-webkit-transform: translateX(-40px);
+	transform: translateX(-40px);
+}
+
 .rewiews-list__item--inactive .rewiews-list__shadow
 {
 	background: -webkit-gradient(linear,left top,right top,from(transparent),color-stop(transparent),to(white));
 	background: linear-gradient(to right,transparent,transparent,#fff);
-	-webkit-transition: all 1s ease-in;
-	transition: all 1s ease-in;
+	-webkit-transition: background 1s ease-in;
+	transition: background 1s ease-in;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -394,7 +465,12 @@ a
 
 .rewiew
 {
-	padding: 60px 40px;
+	background: #fff;
+	padding: 0 40px;
+	-webkit-box-shadow: 0 20px 40px #dcdee3;
+	box-shadow: 0 20px 40px #dcdee3;
+	border-radius: 4px;
+	border: 1px solid #fff;
 }
 
 .rewiew__client

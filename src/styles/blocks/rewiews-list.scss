@@ -9,7 +9,9 @@
 
 .rewiews-list__item{
 	position: relative;
-	transition: all 1s linear;
+	transition: opacity 1s linear;
+
+	background: transparent;
 	opacity: 0.5;
 
 	&--none{
@@ -18,14 +20,23 @@
 	&--active{
 		transform: translateY(-8px);
 		opacity: 1;
+		z-index: 50;
 	}
 	&--inactive{
 		transform: translateY(8px);
 	}
 }
 
+.rewiew-left{
+	transform: translateX(40px);
+}
+.rewiew-right{
+	transition: opacity 1s linear;
+	transform: translateX(-40px);
+}
+
 .rewiews-list__item--inactive .rewiews-list__shadow{
-	transition: all 1s ease-in;
+	transition: background 1s ease-in;
 
 	position: absolute;
 	width: 100%;

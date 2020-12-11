@@ -3,6 +3,7 @@ const pug2html = require('./gulp/tasks/pug2html');
 const styles = require('./gulp/tasks/styles');
 const image = require('./gulp/tasks/image');
 const clean = require('./gulp/tasks/clean');
+const fonts = require('./gulp/tasks/fonts');
 const scripts = require('./gulp/tasks/scripts');
 const server = require('browser-sync').create();
 const run = require('gulp4-run-sequence');
@@ -11,6 +12,7 @@ const run = require('gulp4-run-sequence');
 module.exports.html = gulp.series(pug2html);
 module.exports.styles = gulp.series(styles);
 module.exports.scripts = gulp.series(scripts);
+module.exports.fonts = gulp.series(fonts);
 module.exports.img = gulp.parallel(image.minify, image.webp, image.sprite);
 module.exports.clean = gulp.series(clean.bind(null, 'build/'));
 
@@ -37,5 +39,5 @@ module.exports.serve = function (cb){
 };
 
 module.exports.build = function (done) {
-	run("clean", "html", "styles", "scripts", "img", done);
+	run("clean", "html", "styles", "fonts", "scripts", "img", done);
 }
