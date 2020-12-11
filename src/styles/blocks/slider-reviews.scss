@@ -46,6 +46,8 @@
 	padding: 0 20px;
 }
 .slider-rewiews__prev{
+	transition: transform 200ms linear;
+
 	position: relative;
 
 	cursor: pointer;
@@ -63,9 +65,15 @@
 
 		background-image: url("../img/arrow_left.png");
 	}
+	&:hover,
+	&:focus{
+		transform: translateX(-15px);
+	}
 }
 
 .slider-rewiews__next{
+	transition: transform 200ms linear;
+
 	position: relative;
 
 	cursor: pointer;
@@ -83,6 +91,10 @@
 
 		background-image: url("../img/arrow_right.png");
 	}
+	&:hover,
+	&:focus{
+		transform: translateX(15px);
+	}
 }
 
 .rewiew__client-photo{
@@ -90,7 +102,7 @@
 	height: 100px;
 }
 
-.slider-rewiews__dots{
+.slider-rewiews__dots-down{
 	display: flex;
 	justify-content: center;
 }
@@ -116,8 +128,6 @@
 	}
 }
 .slider-rewiews__dot--active{
-
-
 	&::before{
 		position: absolute;
 
@@ -139,8 +149,8 @@
 		position: absolute;
 
 		content: "";
-		top: 6px;
-		left: 6px;
+		top: 5px;
+		left: 5;
 
 		width: 11px;
 		height: 11px;
