@@ -440,7 +440,7 @@ a
 	padding: 0;
 	list-style: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: .94fr 1.12fr .94fr;
 	padding: 30px;
 }
 
