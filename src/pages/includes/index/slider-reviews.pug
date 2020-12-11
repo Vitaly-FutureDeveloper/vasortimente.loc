@@ -8,9 +8,9 @@ section.slider-rewiews
 	header.slider-rewiews__header
 		h2.slider-rewiews__title.title Отзывы постоянных клиентов
 		.slider-rewiews__dots
-			.slider-rewiews__prev
+			.slider-rewiews__prev(tabindex="0")
 			p.slider-rewiews__dots-text <span class="slider-rewiews__from">1</span> / <span class="slider-rewiews__to">6</span>
-			.slider-rewiews__next
+			.slider-rewiews__next(tabindex="0")
 	ul.rewiews-list
 		li.rewiews-list__item
 			- for(var li = 0; li < 6; li++)
@@ -37,4 +37,4 @@ section.slider-rewiews
 			li.rewiews-list__item
 	.slider-rewiews__dots-down
 		- for(var li = 0; li < 6; li++)
-			.slider-rewiews__dot
+			.slider-rewiews__dot(tabindex="0")

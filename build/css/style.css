@@ -275,7 +275,6 @@ a
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	margin-bottom: 45px;
 }
 
 .slider-rewiews__title
@@ -306,13 +305,14 @@ a
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-right: 190px;
+	margin-right: 135px;
 }
 
 .slider-rewiews__dots-text
 {
 	font: 400 18px "Exo 2";
 	color: #828899;
+	white-space: nowrap;
 	padding: 0 20px;
 }
 
@@ -324,7 +324,7 @@ a
 	transition: transform .2s linear,-webkit-transform .2s linear;
 	position: relative;
 	cursor: pointer;
-	padding-right: 110px;
+	padding-right: 90px;
 }
 
 .slider-rewiews__prev::before
@@ -352,7 +352,7 @@ a
 	transition: transform .2s linear,-webkit-transform .2s linear;
 	position: relative;
 	cursor: pointer;
-	padding-left: 110px;
+	padding-left: 90px;
 }
 
 .slider-rewiews__next::after
@@ -372,12 +372,6 @@ a
 	transform: translateX(15px);
 }
 
-.rewiew__client-photo
-{
-	width: 100px;
-	height: 100px;
-}
-
 .slider-rewiews__dots-down
 {
 	display: -webkit-box;
@@ -386,12 +380,19 @@ a
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .slider-rewiews__dot
 {
 	position: relative;
+	display: grid;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	padding: 20px;
 	cursor: pointer;
 }
@@ -428,7 +429,7 @@ a
 	position: absolute;
 	content: "";
 	top: 5px;
-	left: 5;
+	left: 5px;
 	width: 11px;
 	height: 11px;
 	border-radius: 50%;
@@ -440,15 +441,21 @@ a
 	padding: 0;
 	list-style: none;
 	display: grid;
-	grid-template-columns: .94fr 1.12fr .94fr;
+	grid-template-columns: .96fr 1.08fr .96fr;
 	padding: 30px;
 }
 
 .rewiews-list__item
 {
 	position: relative;
-	-webkit-transition: opacity 1s linear;
-	transition: opacity 1s linear;
+	-webkit-transition-property: opacity,-webkit-filter;
+	transition-property: opacity,-webkit-filter;
+	transition-property: opacity,filter;
+	transition-property: opacity,filter,-webkit-filter;
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
 	background: 0 0;
 	opacity: .5;
 }
@@ -470,6 +477,8 @@ a
 
 .rewiews-list__item--inactive
 {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
 	-webkit-transform: translateY(8px);
 	transform: translateY(8px);
 }
@@ -490,8 +499,8 @@ a
 
 .rewiews-list__item--inactive .rewiews-list__shadow
 {
-	background: -webkit-gradient(linear,left top,right top,from(transparent),color-stop(transparent),to(white));
-	background: linear-gradient(to right,transparent,transparent,#fff);
+	background: -webkit-gradient(linear,left top,right top,from(transparent),to(white));
+	background: linear-gradient(to right,transparent,#fff);
 	-webkit-transition: background 1s ease-in;
 	transition: background 1s ease-in;
 	position: absolute;
@@ -503,7 +512,7 @@ a
 .rewiew
 {
 	background: #fff;
-	padding: 0 40px;
+	padding: 50px 40px 0;
 	border-radius: 4px;
 	border: 1px solid #fff;
 	cursor: pointer;
@@ -538,12 +547,19 @@ a
 	text-align: left;
 	text-transform: uppercase;
 	margin-bottom: 0;
+	margin-top: 12px;
 	padding: 0;
 }
 
 .rewiew__title-wrapper
 {
-	margin-left: 30px;
+	margin-left: 20px;
+}
+
+.rewiew__client-photo
+{
+	width: 110px;
+	height: 110px;
 }
 
 .rewiew__text
@@ -576,7 +592,7 @@ a
 
 .stars__item:not(last-child)
 {
-	padding-right: 20px;
+	padding-right: 8px;
 }
 
 .stars__item--active polygon

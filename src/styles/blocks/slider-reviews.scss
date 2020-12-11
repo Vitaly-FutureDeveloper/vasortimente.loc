@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	margin-bottom: 45px;
+	//margin-bottom: 45px;
 }
 
 .slider-rewiews__title{
@@ -35,13 +35,15 @@
 	position: relative;
 
 	display: flex;
-	margin-right: 190px;
+	margin-right: 135px;
 }
 .slider-rewiews__dots-text{
 	color: #828899;
 	font-family: "Exo 2";
 	font-size: 18px;
 	font-weight: 400;
+
+	white-space: nowrap;
 
 	padding: 0 20px;
 }
@@ -51,7 +53,7 @@
 	position: relative;
 
 	cursor: pointer;
-	padding-right: 110px;
+	padding-right: 90px;
 
 	&::before{
 		content: "";
@@ -77,7 +79,7 @@
 	position: relative;
 
 	cursor: pointer;
-	padding-left: 110px;
+	padding-left: 90px;
 
 	&::after{
 		content: "";
@@ -97,19 +99,18 @@
 	}
 }
 
-.rewiew__client-photo{
-	width: 100px;
-	height: 100px;
-}
-
 .slider-rewiews__dots-down{
 	display: flex;
 	justify-content: center;
 
-	margin-top: 30px;
+	margin-top: 15px;
 }
 .slider-rewiews__dot{
 	position: relative;
+
+	display: grid;
+	align-items: center;
+	justify-content: center;
 
 	padding: 20px;
 
@@ -152,7 +153,7 @@
 
 		content: "";
 		top: 5px;
-		left: 5;
+		left: 5px;
 
 		width: 11px;
 		height: 11px;

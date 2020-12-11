@@ -130,6 +130,11 @@
 
 //
 	function inactive() {
+		/**
+		 * Захват всех неактивных боковых блоков
+		 * Задание классов для неактивных, чтоб сместить блоки друг к другу
+		 * @param {}
+		 */
 		var inactive = document.querySelectorAll('.rewiews-list__item--inactive');
 
 		for(let i = 0; i < slides.length; i++){
