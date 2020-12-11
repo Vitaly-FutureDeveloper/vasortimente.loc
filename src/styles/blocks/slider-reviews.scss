@@ -90,12 +90,33 @@
 	height: 100px;
 }
 
-.snippet{
+.slider-rewiews__dots{
 	display: flex;
 	justify-content: center;
 }
-.slider-rewiews__snippet{
+.slider-rewiews__dot{
 	position: relative;
+
+	padding: 20px;
+
+	cursor: pointer;
+
+	&::after{
+		position: absolute;
+
+		content: "";
+		top: 6px;
+		left: 6px;
+
+		width: 15px;
+		height: 15px;
+
+		border-radius: 50%;
+		background-color: grey;
+	}
+}
+.slider-rewiews__dot--active{
+
 
 	&::before{
 		position: absolute;

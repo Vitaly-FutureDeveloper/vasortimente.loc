@@ -358,7 +358,7 @@ a
 	height: 100px;
 }
 
-.snippet
+.slider-rewiews__dots
 {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -368,12 +368,26 @@ a
 	justify-content: center;
 }
 
-.slider-rewiews__snippet
+.slider-rewiews__dot
 {
 	position: relative;
+	padding: 20px;
+	cursor: pointer;
 }
 
-.slider-rewiews__snippet::before
+.slider-rewiews__dot::after
+{
+	background: grey;
+	position: absolute;
+	content: "";
+	top: 6px;
+	left: 6px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.slider-rewiews__dot--active::before
 {
 	background: radial-gradient(at top center,#d9dee5,#abafb4) #fff;
 	position: absolute;
@@ -387,7 +401,7 @@ a
 	box-shadow: 0 3px 7px rgba(0,0,0,.35);
 }
 
-.slider-rewiews__snippet::after
+.slider-rewiews__dot--active::after
 {
 	background: #fff;
 	position: absolute;
@@ -471,6 +485,7 @@ a
 	box-shadow: 0 20px 40px #dcdee3;
 	border-radius: 4px;
 	border: 1px solid #fff;
+	cursor: pointer;
 }
 
 .rewiew__client

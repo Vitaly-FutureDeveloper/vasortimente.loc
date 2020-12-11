@@ -1,7 +1,5 @@
 (function () {
 
-
-
 	var slideIndex = 1;
 	var prev = document.querySelector('.slider-rewiews__prev');
 	var next = document.querySelector('.slider-rewiews__next');
@@ -9,6 +7,9 @@
 
 	var from = document.querySelector('.slider-rewiews__from');
 	var to = document.querySelector('.slider-rewiews__to');
+
+	var dots = document.querySelectorAll('.slider-rewiews__dot');
+	var dotsWrap = document.querySelector('.slider-rewiews__dots');
 
 	function showSlides(n) {
 		/**
@@ -97,18 +98,21 @@
 
 	for(let i = 0; i < slides.length; i++){
 		slides[i].addEventListener('click', () => {
-			currentSlide(i)
+			currentSlide(i);
 		});
 	}
+	dotsWrap.addEventListener('click', function (evt) {
+		for (let i = 0; i < dots.length + 1; i++){
+			if (evt.target.classList.contains('slider-rewiews__dot') && evt.target == dots[i - 1]){
+				currentSlide(i);
+			}
+		}
+	});
 
 //
 	function inactive() {
 		var inactive = document.querySelectorAll('.rewiews-list__item--inactive');
-		console.log(inactive);
-		/*inactive.forEach(function(item) {
-			item.classList.remove('rewiew-left');
-			item.classList.remove('rewiew-right');
-		});*/
+
 		for(let i = 0; i < slides.length; i++){
 			slides[i].classList.remove('rewiew-left');
 			slides[i].classList.remove('rewiew-right');
