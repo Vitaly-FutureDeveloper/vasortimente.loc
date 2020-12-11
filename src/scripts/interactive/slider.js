@@ -4,6 +4,7 @@
 	var prev = document.querySelector('.slider-rewiews__prev');
 	var next = document.querySelector('.slider-rewiews__next');
 	var slides = document.querySelectorAll('.rewiews-list__item');
+
 	var from = document.querySelector('.slider-rewiews__from');
 	var to = document.querySelector('.slider-rewiews__to');
 
@@ -24,12 +25,15 @@
 		slides[slideIndex].classList.remove('rewiews-list__item--none');
 
 		slides[slideIndex].classList.add('rewiews-list__item--active');
+		slides[slideIndex].classList.remove('rewiews-list__item--inactive');
 
 		slides[slideIndex - 1].classList.remove('rewiews-list__item--none');
 		slides[slideIndex - 1].classList.remove('rewiews-list__item--active');
+		slides[slideIndex - 1].classList.add('rewiews-list__item--inactive');
 
 		slides[slideIndex + 1].classList.remove('rewiews-list__item--none');
 		slides[slideIndex + 1].classList.remove('rewiews-list__item--active');
+		slides[slideIndex + 1].classList.add('rewiews-list__item--inactive');
 
 		from.textContent = slideIndex;
 		to.textContent = slides.length - 2;
@@ -57,7 +61,6 @@
 		*/
 		showSlides(slideIndex += n);
 	}
-	/* Код для доработки
 	function currentSlide(n) {
 		/*
 		* Скрывает все слайды
@@ -65,8 +68,10 @@
 		* Показывает соседние слайды неактивными
 		* @param {n} - slideIndex
 		*/
-	//	showSlides(slideIndex = n);
-//	}
+		showSlides(slideIndex = n);
+	}
+
+
 
 	prev.addEventListener('click', function () {
 		/*
@@ -82,5 +87,11 @@
 		 */
 		plusSlides(1);
 	});
+
+	for(let i = 0; i < slides.length; i++){
+		slides[i].addEventListener('click', () => {
+			currentSlide(i)
+		});
+	}
 
 })();

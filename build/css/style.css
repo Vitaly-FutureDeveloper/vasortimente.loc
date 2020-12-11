@@ -356,6 +356,7 @@ a
 
 .rewiews-list__item
 {
+	position: relative;
 	-webkit-transition: all 1s linear;
 	transition: all 1s linear;
 	opacity: .5;
@@ -368,9 +369,27 @@ a
 
 .rewiews-list__item--active
 {
-	-webkit-transform: translateY(-15px);
-	transform: translateY(-15px);
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
 	opacity: 1;
+}
+
+.rewiews-list__item--inactive
+{
+	-webkit-transform: translateY(8px);
+	transform: translateY(8px);
+}
+
+.rewiews-list__item--inactive .rewiews-list__shadow
+{
+	background: -webkit-gradient(linear,left top,right top,from(transparent),color-stop(transparent),to(white));
+	background: linear-gradient(to right,transparent,transparent,#fff);
+	-webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
 }
 
 .rewiew
@@ -388,6 +407,17 @@ a
 	align-items: flex-start;
 }
 
+@media (max-width:1200px)
+{
+	.rewiew__client
+	{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
 .rewiew__title
 {
 	font: normal 400 20px/26px "Exo 2";
@@ -402,6 +432,23 @@ a
 .rewiew__title-wrapper
 {
 	margin-left: 30px;
+}
+
+.rewiew__text
+{
+	position: relative;
+	padding-left: 30px;
+}
+
+.rewiew__text::before
+{
+	background: url(../img/icon-rewiew-text.png);
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 12px;
+	height: 11px;
 }
 
 .stars

@@ -6,6 +6,12 @@
 	display: flex;
 	align-items: flex-start;
 }
+@media (max-width: 1200px){
+	.rewiew__client{
+		flex-direction: column;
+	}
+}
+
 .rewiew__title{
 	color: #333333;
 	font-family: "Exo 2";
@@ -23,4 +29,23 @@
 
 .rewiew__title-wrapper{
 	margin-left: 30px;
+}
+
+.rewiew__text{
+	position: relative;
+
+	padding-left: 30px;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 0;
+
+		width: 12px;
+		height: 11px;
+
+		//background-color: #1f3870;
+		background-image: url("../img/icon-rewiew-text.png");
+	}
 }
