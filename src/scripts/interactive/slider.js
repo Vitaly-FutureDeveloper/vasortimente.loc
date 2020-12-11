@@ -101,7 +101,7 @@
 			currentSlide(i);
 		});
 	}
-	
+
 	dots[0].classList.add('slider-rewiews__dot--active');
 	dotsWrap.addEventListener('click', function (evt) {
 		dots.forEach(function(item) {

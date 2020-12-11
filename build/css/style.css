@@ -386,6 +386,7 @@ a
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	margin-top: 30px;
 }
 
 .slider-rewiews__dot
