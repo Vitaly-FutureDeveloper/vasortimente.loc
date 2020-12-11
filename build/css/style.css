@@ -460,6 +460,8 @@ a
 
 .rewiews-list__item--active
 {
+	-webkit-box-shadow: 0 20px 40px #dcdee3;
+	box-shadow: 0 20px 40px #dcdee3;
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
 	opacity: 1;
@@ -502,8 +504,6 @@ a
 {
 	background: #fff;
 	padding: 0 40px;
-	-webkit-box-shadow: 0 20px 40px #dcdee3;
-	box-shadow: 0 20px 40px #dcdee3;
 	border-radius: 4px;
 	border: 1px solid #fff;
 	cursor: pointer;
