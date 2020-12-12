@@ -10,7 +10,9 @@
 const arrayFilesConcate = [
 	"src/scripts/components/global.js",
 	"src/scripts/components/trottle.js",
+	"src/scripts/components/tabaction.js",
 	"src/scripts/interactive/slider.js",
+	"src/scripts/interactive/scale-tab.js",
 ];
 
 

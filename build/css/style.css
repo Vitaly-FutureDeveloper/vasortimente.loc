@@ -830,7 +830,7 @@ a
 	top: -42px;
 }
 
-.scale__block--active
+.scale__block--active:not(last-of-type)
 {
 	margin-right: 70px;
 	margin-left: -15px;
@@ -957,7 +957,7 @@ a
 		width: 400px;
 	}
 
-	.scale__block--active
+	.scale__block--active:not(last-child)
 	{
 		margin-right: 40px;
 	}
@@ -1120,6 +1120,40 @@ a
 {
 	-webkit-transform: translateX(5px);
 	transform: translateX(5px);
+}
+
+@-webkit-keyframes anim-tab
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes anim-tab
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+.tab-animation
+{
+	-webkit-animation-name: anim-tab;
+	animation-name: anim-tab;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 }
 
 .main-footer

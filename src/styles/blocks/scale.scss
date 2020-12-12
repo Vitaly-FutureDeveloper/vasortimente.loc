@@ -23,7 +23,7 @@
 .scale__block--active.scale__block{
 	top: -42px;
 }
-.scale__block--active{
+.scale__block--active:not(last-of-type){
 	margin-right: 70px;
 	margin-left: -15px;
 }
@@ -121,7 +121,7 @@
 	.scale{
 		width: 400px;
 	}
-	.scale__block--active{
+	.scale__block--active:not(last-child){
 		margin-right: 40px;
 	}
 
