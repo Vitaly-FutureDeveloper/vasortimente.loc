@@ -677,6 +677,13 @@ a
 	fill: #ed8439;
 }
 
+.about-certificates
+{
+	outline: 1px solid #000;
+	display: grid;
+	grid-template-columns: 64% 36%;
+}
+
 .main-footer
 {
 	position: relative;
