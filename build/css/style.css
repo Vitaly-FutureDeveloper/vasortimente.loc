@@ -532,7 +532,7 @@ a
 	padding: 0;
 	list-style: none;
 	display: grid;
-	grid-template-columns: .96fr 1.08fr .96fr;
+	grid-template-columns: .98fr 1.02fr .98fr;
 	padding: 0 30px;
 }
 
