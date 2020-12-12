@@ -117,3 +117,17 @@
 		border-color: #333333;
 	}
 }
+@media (max-width: 1330px){
+	.scale{
+		width: 400px;
+	}
+	.scale__block--active{
+		margin-right: 40px;
+	}
+
+	.scale__block--active .scale__button{
+		&::after{
+			top: 24%;
+		}
+	}
+}

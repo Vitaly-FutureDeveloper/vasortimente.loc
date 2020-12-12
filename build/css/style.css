@@ -950,6 +950,24 @@ a
 	border-color: #333;
 }
 
+@media (max-width:1330px)
+{
+	.scale
+	{
+		width: 400px;
+	}
+
+	.scale__block--active
+	{
+		margin-right: 40px;
+	}
+
+	.scale__block--active .scale__button::after
+	{
+		top: 24%;
+	}
+}
+
 .certificates
 {
 	background: url(../img/certificate_back_image.png) no-repeat #f0f2f7;
