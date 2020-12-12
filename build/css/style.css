@@ -780,6 +780,12 @@ a
 	transform: skewX(40deg);
 }
 
+.about__button:active
+{
+	-webkit-box-shadow: inset 0 2px 0 0 #696969;
+	box-shadow: inset 0 2px 0 0 #696969;
+}
+
 .about__button span
 {
 	position: relative;
@@ -833,10 +839,20 @@ a
 	top: -42px;
 }
 
-.scale__block--active:not(last-of-type)
+.scale__block--active:first-of-type
+{
+	margin-left: -15px;
+}
+
+.scale__block--active:last-of-type
+{
+	margin-right: -20px;
+	margin-left: 70px;
+}
+
+.scale__block--active:not(:last-of-type)
 {
 	margin-right: 70px;
-	margin-left: -15px;
 }
 
 .scale__text
@@ -960,7 +976,12 @@ a
 		width: 400px;
 	}
 
-	.scale__block--active:not(last-child)
+	.scale__block--active:last-of-type
+	{
+		margin-left: 40px;
+	}
+
+	.scale__block--active:not(:last-of-type)
 	{
 		margin-right: 40px;
 	}
@@ -970,12 +991,17 @@ a
 {
 	.scale
 	{
-		width: 260px;
+		width: 270px;
 	}
 
-	.scale__block--active:not(last-child)
+	.scale__block--active:last-of-type
 	{
-		margin-right: 25px;
+		margin-left: 20px;
+	}
+
+	.scale__block--active:not(:last-of-type)
+	{
+		margin-right: 20px;
 	}
 }
 

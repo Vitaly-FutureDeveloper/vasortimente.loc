@@ -23,10 +23,19 @@
 .scale__block--active.scale__block{
 	top: -42px;
 }
-.scale__block--active:not(last-of-type){
-	margin-right: 70px;
-	margin-left: -15px;
+.scale__block--active {
+	&:first-of-type {
+		margin-left: -15px;
+	}
+	&:last-of-type{
+		margin-right: -20px;
+		margin-left: 70px;
+	}
+	&:not(:last-of-type) {
+		margin-right: 70px;
+	}
 }
+
 .scale__text{
 	color: #b1b6c4;
 	font-family: "Exo 2";
@@ -117,20 +126,31 @@
 		border-color: #333333;
 	}
 }
+
 @media (max-width: 1330px){
 	.scale{
 		width: 400px;
 	}
-	.scale__block--active:not(last-child){
-		margin-right: 40px;
+	.scale__block--active {
+		&:last-of-type {
+			margin-left: 40px;
+		}
+		&:not(:last-of-type) {
+			margin-right: 40px;
+		}
 	}
 }
 
 @media (max-width: 1270px){
 	.scale{
-		width: 260px;
+		width: 270px;
 	}
-	.scale__block--active:not(last-child){
-		margin-right: 25px;
+	.scale__block--active {
+		&:last-of-type {
+			margin-left: 20px;
+		}
+		&:not(:last-of-type) {
+			margin-right: 20px;
+		}
 	}
 }
