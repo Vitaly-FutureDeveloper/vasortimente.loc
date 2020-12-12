@@ -124,12 +124,6 @@
 	.scale__block--active:not(last-child){
 		margin-right: 40px;
 	}
-
-	.scale__block--active .scale__button{
-		&::after{
-			top: 24%;
-		}
-	}
 }
 
 @media (max-width: 1270px){
@@ -138,11 +132,5 @@
 	}
 	.scale__block--active:not(last-child){
 		margin-right: 25px;
-	}
-
-	.scale__block--active .scale__button{
-		&::after{
-			top: 24%;
-		}
 	}
 }
