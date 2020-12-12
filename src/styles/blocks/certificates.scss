@@ -7,7 +7,7 @@
 	background-position-x: right;
 	background-position-y: top;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: auto;
 
 	z-index: 101;
 }
@@ -18,8 +18,14 @@
 }
 
 .certificates__image-wrapper{
+	transition: all 2s;
 	width: 225px;
 	height: 235px;
+
+	&:hover,
+	&:focus{
+		opacity: 0.8;
+	}
 }
 
 .certificates__text{
