@@ -4,9 +4,10 @@
 
 	background-color: #f0f2f7;
 	background-image: url("../img/certificate_back_image.png");
-	background-position-x: 17%;
-	background-position-y: -25%;
+	background-position-x: right;
+	background-position-y: top;
 	background-repeat: no-repeat;
+	background-size: contain;
 
 	z-index: 101;
 }
@@ -42,7 +43,7 @@
 .certificates__slider{
 	position: relative;
 	bottom: 7%;
-	right: 9%;
+	right: 20%;
 
 	display: flex;
 	justify-content: space-between;

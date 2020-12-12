@@ -695,7 +695,10 @@ a
 {
 	background: #f0f2f7;
 	display: grid;
-	grid-template-columns: 55% 45%;
+	grid-template-columns: 70% 30%;
+	max-width: 1490px;
+	padding: 0 125px 0 190px;
+	margin: 0 auto;
 }
 
 .about__text
@@ -968,13 +971,31 @@ a
 	}
 }
 
+@media (max-width:1270px)
+{
+	.scale
+	{
+		width: 260px;
+	}
+
+	.scale__block--active:not(last-child)
+	{
+		margin-right: 25px;
+	}
+
+	.scale__block--active .scale__button::after
+	{
+		top: 24%;
+	}
+}
+
 .certificates
 {
-	background: url(../img/certificate_back_image.png) no-repeat #f0f2f7;
+	background: url(../img/certificate_back_image.png) no-repeat 0 0/contain #f0f2f7;
 	position: relative;
 	top: -12px;
-	background-position-x: 17%;
-	background-position-y: -25%;
+	background-position-x: right;
+	background-position-y: top;
 	z-index: 101;
 }
 
@@ -1010,7 +1031,7 @@ a
 {
 	position: relative;
 	bottom: 7%;
-	right: 9%;
+	right: 20%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
