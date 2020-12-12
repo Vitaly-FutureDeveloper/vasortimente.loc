@@ -4,12 +4,19 @@
 .about__text{
 	display: none;
 
+	width: 85%;
+
 	font-family: "Exo 2 Light";
 	font-size: 16px;
 	font-weight: 300;
 	font-style: normal;
 	letter-spacing: normal;
 	line-height: 30px;
+
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+
+	padding: 15px;
 
 	strong{
 		font-family: "Exo 2- Semi Bold Italic";
@@ -21,5 +28,47 @@
 
 	&--active{
 		display: block;
+	}
+}
+
+.about__button{
+	@include button-blue-deg;
+
+	position: relative;
+
+	width: 216px;
+	height: 60px;
+
+	margin-top: 50px;
+	margin-left: 25px;
+
+	span{
+		position: relative;
+		padding-right: 30px;
+
+		&::after{
+			content: "";
+			display: inline-block;
+
+			position: relative;
+			top: 0;
+			right: -15px;
+
+			width: 30px;
+			height: 10px;
+
+			background-color: transparent;
+			background-image: url("../img/arrow_right_button.png");
+		}
+
+	}
+
+	&:hover,
+	&:focus{
+		span {
+			&::after {
+				right: -20px;
+			}
+		}
 	}
 }
