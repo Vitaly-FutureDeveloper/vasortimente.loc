@@ -988,6 +988,122 @@ a
 	line-height: normal;
 }
 
+.certificates__slider
+{
+	position: relative;
+	bottom: 7%;
+	right: 9%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 360px;
+}
+
+.certificates__slider-prev
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	font-family: inherit;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 150ms;
+	transition-duration: 150ms;
+}
+
+.certificates__slider-prev:focus,.certificates__slider-prev:hover
+{
+	opacity: .9;
+}
+
+.certificates__slider-prev:active
+{
+	opacity: .7;
+}
+
+.certificates__slider-prev::before
+{
+	background: url(../img/arrow_left_certificates.png) transparent;
+	content: "";
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 10px;
+}
+
+.certificates__slider-prev:focus::before,.certificates__slider-prev:hover::before
+{
+	-webkit-transform: translateX(-5px);
+	transform: translateX(-5px);
+}
+
+.certificates__slider-next
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	font-family: inherit;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 150ms;
+	transition-duration: 150ms;
+}
+
+.certificates__slider-next:focus,.certificates__slider-next:hover
+{
+	opacity: .9;
+}
+
+.certificates__slider-next:active
+{
+	opacity: .7;
+}
+
+.certificates__slider-next::before
+{
+	background: url(../img/arrow_right_certificates.png) transparent;
+	content: "";
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 10px;
+}
+
+.certificates__slider-next:focus::before,.certificates__slider-next:hover::before
+{
+	-webkit-transform: translateX(5px);
+	transform: translateX(5px);
+}
+
 .main-footer
 {
 	position: relative;

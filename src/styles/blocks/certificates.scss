@@ -38,3 +38,59 @@
 		line-height: normal;
 	}
 }
+
+.certificates__slider{
+	position: relative;
+	bottom: 7%;
+	right: 9%;
+
+	display: flex;
+	justify-content: space-between;
+
+	width: 360px;
+}
+
+.certificates__slider-prev{
+	@include buttons;
+
+	&::before{
+		content: "";
+
+		position: relative;
+		top: 0;
+		left: 0;
+
+		width: 30px;
+		height: 10px;
+
+		background-color: transparent;
+		background-image: url("../img/arrow_left_certificates.png");
+	}
+
+	&:hover::before,
+	&:focus::before{
+		transform: translateX(-5px);
+	}
+}
+.certificates__slider-next{
+	@include buttons;
+
+	&::before{
+		content: "";
+
+		position: relative;
+		top: 0;
+		left: 0;
+
+		width: 30px;
+		height: 10px;
+
+		background-color: transparent;
+		background-image: url("../img/arrow_right_certificates.png");
+	}
+
+	&:hover::before,
+	&:focus::before{
+		transform: translateX(5px);
+	}
+}
