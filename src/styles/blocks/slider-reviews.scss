@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	//margin-bottom: 45px;
+	margin-bottom: 30px;
 }
 
 .slider-rewiews__title{
@@ -48,6 +48,8 @@
 	padding: 0 20px;
 }
 .slider-rewiews__prev{
+	@include buttons;
+
 	transition: transform 200ms linear;
 
 	position: relative;
@@ -74,6 +76,8 @@
 }
 
 .slider-rewiews__next{
+	@include buttons;
+
 	transition: transform 200ms linear;
 
 	position: relative;
@@ -103,36 +107,34 @@
 	display: flex;
 	justify-content: center;
 
-	margin-top: 15px;
+	//margin-top: 15px;
 }
 .slider-rewiews__dot{
-	position: relative;
+	@include buttons;
 
-	display: grid;
-	align-items: center;
-	justify-content: center;
+	position: relative;
 
 	padding: 20px;
 
 	cursor: pointer;
 
 	&::after{
-		position: absolute;
+		position: relative;
 
 		content: "";
-		top: 6px;
-		left: 6px;
+		top: 0;
+		left: 0;
 
 		width: 15px;
 		height: 15px;
 
 		border-radius: 50%;
-		background-color: grey;
+		background-color: #dadfe6;
 	}
 }
 .slider-rewiews__dot--active{
 	&::before{
-		position: absolute;
+		position: relative;
 
 		content: "";
 		top: 0;
@@ -152,8 +154,8 @@
 		position: absolute;
 
 		content: "";
-		top: 5px;
-		left: 5px;
+		top: 42%;
+		left: 41%;
 
 		width: 11px;
 		height: 11px;
