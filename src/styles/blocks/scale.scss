@@ -8,16 +8,16 @@
 	background-color: #c8cede;
 	background-image: linear-gradient(to right, #d0d5e3 0%, #d4d8e4 100%);
 
-	padding: 0 5px;
-
 	margin-top: 75px;
-	margin-left: 95px;
+	margin-left: 110px;
 }
 
 .scale__block{
 	position: relative;
 	top: -34px;
 	left: 0;
+
+	margin-right: -10px;
 }
 
 .scale__block--active.scale__block{
@@ -25,6 +25,7 @@
 }
 .scale__block--active{
 	margin-right: 70px;
+	margin-left: -15px;
 }
 .scale__text{
 	color: #b1b6c4;
@@ -36,10 +37,8 @@
 	line-height: 30px;
 
 	padding-bottom: 0;
-	//margin-bottom: 15px;
 	text-decoration: underline;
 	text-decoration-style: dotted;
-	//border-bottom: 1px dashed #b1b6c4;
 }
 .scale__block--active .scale__text{
 	color: #333333;
@@ -85,6 +84,12 @@
 		border-radius: 50%;
 		box-sizing: content-box;
 	}
+
+	&:hover::before,
+	&:focus::before{
+		border-width: 3px;
+		border-color: #333333;
+	}
 }
 .scale__button{
 	@include buttons;
@@ -105,5 +110,10 @@
 		border: 1px solid #c8cede;
 		border-radius: 50%;
 		box-sizing: content-box;
+	}
+	&:hover::before,
+	&:focus::before{
+		border-width: 2px;
+		border-color: #333333;
 	}
 }
