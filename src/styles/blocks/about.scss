@@ -1,0 +1,25 @@
+.about{
+
+}
+.about__text{
+	display: none;
+
+	font-family: "Exo 2 Light";
+	font-size: 16px;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 30px;
+
+	strong{
+		font-family: "Exo 2- Semi Bold Italic";
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: normal;
+	}
+
+	&--active{
+		display: block;
+	}
+}

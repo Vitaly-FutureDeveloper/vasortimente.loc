@@ -24,3 +24,28 @@
 		local("Exo 2 - Light Italic"),
 		url("fonts/Exo2.0-LightItalic.otf") format("opentype");
 }
+
+@font-face{
+	font-family: "Exo 2 Light";
+
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+
+	src:
+		local("Exo 2 Light"),
+		url("fonts/Exo2.0-Light.otf") format("opentype");
+}
+@font-face{
+	font-family: "Exo 2- Semi Bold Italic";
+
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+
+	src:
+		local("Exo 2- Semi Bold Italic"),
+		local("Exo 2 - Semi Bold Italic"),
+		local("Exo 2-Semi Bold Italic"),
+		url("fonts/Exo2.0-SemiBoldItalic.otf") format("opentype");
+}

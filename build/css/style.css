@@ -10,6 +10,16 @@
 @font-face
 {
 	font-family:"Exo 2";font-weight:400;font-style:italic;font-display:swap;src:local("Exo 2- Light Italic"),local("Exo 2-Light Italic"),local("Exo 2 - Light Italic"),url(fonts/Exo2.0-LightItalic.otf) format("opentype");
+}
+
+@font-face
+{
+	font-family:"Exo 2 Light";font-weight:400;font-style:normal;font-display:swap;src:local("Exo 2 Light"),url(fonts/Exo2.0-Light.otf) format("opentype");
+}
+
+@font-face
+{
+	font-family:"Exo 2- Semi Bold Italic";font-weight:400;font-style:italic;font-display:swap;src:local("Exo 2- Semi Bold Italic"),local("Exo 2 - Semi Bold Italic"),local("Exo 2-Semi Bold Italic"),url(fonts/Exo2.0-SemiBoldItalic.otf) format("opentype");
 }/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html
 {
 	line-height: 1.15;
@@ -682,6 +692,173 @@ a
 	outline: 1px solid #000;
 	display: grid;
 	grid-template-columns: 64% 36%;
+}
+
+.about__text
+{
+	font: normal 300 16px/30px "Exo 2 Light";
+	display: none;
+	letter-spacing: normal;
+}
+
+.about__text strong
+{
+	font-family: "Exo 2- Semi Bold Italic";
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: normal;
+	line-height: normal;
+}
+
+.about__text--active
+{
+	display: block;
+}
+
+.scale
+{
+	background: -webkit-gradient(linear,left top,right top,from(#d0d5e3),to(#d4d8e4)) #c8cede;
+	background: linear-gradient(to right,#d0d5e3 0,#d4d8e4 100%) #c8cede;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 610px;
+	height: 2px;
+	padding: 0 5px;
+	margin-top: 75px;
+	margin-left: 95px;
+}
+
+.scale__block
+{
+	position: relative;
+	top: -34px;
+	left: 0;
+}
+
+.scale__block--active.scale__block
+{
+	top: -42px;
+}
+
+.scale__block--active
+{
+	margin-right: 70px;
+}
+
+.scale__text
+{
+	font: normal 400 14px/30px "Exo 2";
+	color: #b1b6c4;
+	letter-spacing: normal;
+	padding-bottom: 0;
+	text-decoration: underline;
+	-webkit-text-decoration-style: dotted;
+	text-decoration-style: dotted;
+}
+
+.scale__block--active .scale__text
+{
+	font: italic 400 16px/30px "Exo 2- Semi Bold Italic";
+	color: #333;
+	letter-spacing: normal;
+	text-decoration: none;
+}
+
+.scale__block--active .scale__button::before
+{
+	background: #d2d6e3;
+	content: "";
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #c8cede;
+	border-radius: 50%;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.scale__block--active .scale__button::after
+{
+	background: -webkit-gradient(linear,left bottom,left top,from(#ed8439),to(#ffac70)) #fff;
+	background: linear-gradient(to top,#ed8439 0,#ffac70 100%) #fff;
+	content: "";
+	position: absolute;
+	top: 23%;
+	left: 35%;
+	width: 12px;
+	height: 12px;
+	-webkit-box-shadow: 0 20px 30px rgba(0,0,0,.2);
+	box-shadow: 0 20px 30px rgba(0,0,0,.2);
+	border: 1px solid #c8cede;
+	border-radius: 50%;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.scale__button
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	font-family: inherit;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-transition-duration: 150ms;
+	transition-duration: 150ms;
+	position: relative;
+}
+
+.scale__button:focus,.scale__button:hover
+{
+	opacity: .9;
+}
+
+.scale__button:active
+{
+	opacity: .7;
+}
+
+.scale__button::before
+{
+	background: #fff;
+	content: "";
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #c8cede;
+	border-radius: 50%;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.certificates
+{
+	background: url(../img/certificate_back_image.png) no-repeat top right #f0f2f7;
+}
+
+.certificates__image
+{
+	width: 225px;
+	height: 284px;
 }
 
 .main-footer
