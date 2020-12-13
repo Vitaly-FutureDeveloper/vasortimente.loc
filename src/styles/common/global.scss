@@ -14,12 +14,11 @@ html{
 }
 
 body{
-	//min-width: $mediaWidthMobile;
-
 	margin: 0 auto;
 	padding: auto;
+	min-width: 320px;
 
-	font-family: "Exo 2", "Exo 2- Light Italic", OpenSans;
+	font-family: "Exo 2", OpenSans;
 /*
 	@include media-tablet {
 		min-width: $mediaWidthTablet;

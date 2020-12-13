@@ -12,4 +12,13 @@
 	margin: 0 auto;
 
 	background-color: #f0f2f7;
+
+	@include media-custom(1270px){
+		padding: 0 125px;
+		grid-template-columns: auto;
+	}
+
+	@include media-tablet{
+		padding: 0 30px;
+	}
 }

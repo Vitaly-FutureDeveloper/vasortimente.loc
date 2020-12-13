@@ -1,7 +1,6 @@
 .rewiew{
 	padding: 50px 40px 0;
 
-	//box-shadow: 0 20px 40px black; //#dcdee3;
 	border-radius: 4px;
 	border: 1px solid #ffffff;
 	background-color: #ffffff;
@@ -12,12 +11,12 @@
 .rewiew__client{
 	display: flex;
 	align-items: flex-start;
-}
-@media (max-width: 1200px){
-	.rewiew__client{
+
+	@include media-custom(1200px){
 		flex-direction: column;
 	}
 }
+
 
 .rewiew__title{
 	color: #333333;

@@ -1,19 +1,26 @@
 @import '../untils/variables';
 
+
+@mixin media-mobile {
+	@media (max-width: $mediaWidthMobile){
+		@content;
+	}
+}
+
 @mixin media-tablet {
-	@media (min-width: $mediaWidthTablet){
+	@media (max-width: $mediaWidthTablet){
 		@content;
 	}
 }
-
+/*
 @mixin media-laptop {
-	@media (min-width: $mediaWidthLaptop){
+	@media (min-width: $mediaWidthDesctop){
 		@content;
 	}
 }
-
+*/
 @mixin media-custom($width) {
-	@media (min-width: $width){
+	@media (max-width: $width){
 		@content;
 	}
 }

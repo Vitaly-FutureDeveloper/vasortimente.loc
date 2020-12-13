@@ -1,5 +1,5 @@
 .about{
-
+	background-color: transparent;
 }
 .about__text{
 	display: none;
@@ -28,6 +28,10 @@
 
 	&--active{
 		display: block;
+	}
+
+	@include media-custom(1200px){
+		width: auto;
 	}
 }
 
@@ -60,7 +64,6 @@
 			background-color: transparent;
 			background-image: url("../img/arrow_right_button.png");
 		}
-
 	}
 
 	&:hover,
