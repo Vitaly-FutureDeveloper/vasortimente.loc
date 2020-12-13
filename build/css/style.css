@@ -327,6 +327,7 @@ a
 
 .slider-rewiews__prev
 {
+	background: 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -385,6 +386,7 @@ a
 
 .slider-rewiews__next
 {
+	background: 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -453,6 +455,7 @@ a
 
 .slider-rewiews__dot
 {
+	background: 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -519,7 +522,7 @@ a
 	background: #fff;
 	position: absolute;
 	content: "";
-	top: 42%;
+	top: 41%;
 	left: 41%;
 	width: 11px;
 	height: 11px;
@@ -689,6 +692,12 @@ a
 .stars__item--active polygon
 {
 	fill: #ed8439;
+}
+
+.about-certificates-wrapper
+{
+	background: #f0f2f7;
+	width: 100%;
 }
 
 .about-certificates
@@ -896,7 +905,7 @@ a
 	content: "";
 	position: relative;
 	top: 1px;
-	right: 19px;
+	right: 18px;
 	width: 12px;
 	height: 12px;
 	-webkit-box-shadow: 0 20px 30px rgba(0,0,0,.2);
@@ -915,6 +924,7 @@ a
 
 .scale__button
 {
+	background: 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1007,7 +1017,7 @@ a
 
 .certificates
 {
-	background: url(../img/certificate_back_image.png) no-repeat 0 0/auto #f0f2f7;
+	background: url(../img/certificate_back_image.png) no-repeat 0 0/auto transparent;
 	position: relative;
 	top: -12px;
 	background-position-x: right;
@@ -1066,6 +1076,7 @@ a
 
 .certificates__slider-prev
 {
+	background: 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1117,6 +1128,7 @@ a
 
 .certificates__slider-next
 {
+	background: 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
