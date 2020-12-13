@@ -1,8 +1,10 @@
-@charset "UTF-8";
-
 @font-face
 {
-	font-family:"Exo 2";font-weight:500;font-style:normal;font-display:swap;src:local("Exo 2"),local("Exo 2 Regular"),local("Exo 2-Regular"),url(fonts/Exo2.0-Regular.otf) format("opentype");
+	font-family: "Exo 2";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: local("Exo 2"),local("Exo 2 Regular"),local("Exo 2-Regular"),url(fonts/Exo2.0-Regular.otf) format("opentype");
 }
 
 @font-face
@@ -563,18 +565,18 @@ a
 {
 	-webkit-box-shadow: 0 20px 40px #dcdee3;
 	box-shadow: 0 20px 40px #dcdee3;
-	-webkit-transform: translateY(-8px);
-	transform: translateY(-8px);
 	opacity: 1;
 	z-index: 50;
 }
 
-.rewiews-list__item--inactive
+.rewiews-list__item--inactive:not(.rewiews-list__item--empty)
 {
 	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
-	-webkit-transform: translateY(8px);
-	transform: translateY(8px);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: 1px solid #c8cede;
+	border-bottom: 1px solid #c8cede;
 }
 
 .rewiew-left
@@ -591,16 +593,31 @@ a
 	transform: translateX(-40px);
 }
 
-.rewiews-list__item--inactive .rewiews-list__shadow
+.rewiews-list__item--inactive .rewiews-list__over-shadow
 {
-	background: -webkit-gradient(linear,left top,right top,from(transparent),to(white));
-	background: linear-gradient(to right,transparent,#fff);
+	background: -webkit-gradient(linear,left top,right top,from(transparent),color-stop(70%,#fff),to(white));
+	background: linear-gradient(to right,transparent 0,#fff 70%,#fff 100%);
 	-webkit-transition: background 1s ease-in;
 	transition: background 1s ease-in;
 	position: absolute;
+	top: -5%;
+	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 110%;
 	z-index: 100;
+}
+
+.rewiews-list__item--active .rewiews-list__under-shadow
+{
+	background: #f0f2f7;
+	position: absolute;
+	bottom: -10px;
+	left: 4.5%;
+	width: 91%;
+	height: 265px;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	z-index: -1;
 }
 
 .rewiew
@@ -660,6 +677,7 @@ a
 {
 	position: relative;
 	padding-left: 30px;
+	margin-top: 5px;
 }
 
 .rewiew__text::before
@@ -768,7 +786,7 @@ a
 	position: relative;
 	width: 216px;
 	height: 60px;
-	margin-top: 50px;
+	margin-top: 55px;
 	margin-left: 25px;
 }
 

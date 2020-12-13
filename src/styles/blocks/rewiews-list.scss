@@ -21,13 +21,14 @@
 	}
 	&--active{
 		box-shadow: 0 20px 40px #dcdee3;
-		transform: translateY(-8px);
 		opacity: 1;
 		z-index: 50;
 	}
-	&--inactive{
+	&--inactive:not(.rewiews-list__item--empty){
 		filter: grayscale(1);
-		transform: translateY(8px);
+		box-sizing: border-box;
+		border-top: 1px solid #c8cede;
+		border-bottom: 1px solid #c8cede;
 	}
 }
 
@@ -39,14 +40,30 @@
 	transform: translateX(-40px);
 }
 
-.rewiews-list__item--inactive .rewiews-list__shadow{
+.rewiews-list__item--inactive .rewiews-list__over-shadow{
 	transition: background 1s ease-in;
 
 	position: absolute;
+	top: -5%;
+	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 110%;
 
-	background-image: linear-gradient(to right, transparent, white);
+	background-image: linear-gradient(to right, transparent 0%, white 70%, white 100%);
 
 	z-index: 100;
+}
+
+.rewiews-list__item--active .rewiews-list__under-shadow{
+	position: absolute;
+	bottom: -10px;
+	left: 4.5%;
+	width: 91%;
+	height: 265px;
+
+	border-radius: 4px;
+	border: 1px solid #ffffff;
+	background-color: #f0f2f7;
+
+	z-index: -1;
 }

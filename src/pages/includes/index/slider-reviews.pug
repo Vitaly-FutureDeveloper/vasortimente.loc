@@ -12,11 +12,12 @@ section.slider-rewiews
 			p.slider-rewiews__dots-text <span class="slider-rewiews__from">1</span> / <span class="slider-rewiews__to">6</span>
 			button.slider-rewiews__next(tabindex="0")
 	ul.rewiews-list
-		li.rewiews-list__item
+		li.rewiews-list__item.rewiews-list__item--empty
 			- for(var li = 0; li < 6; li++)
 				li.rewiews-list__item
 					article.rewiew
-						.rewiews-list__shadow
+						.rewiews-list__over-shadow
+						.rewiews-list__under-shadow
 						.rewiew__client
 							.rewiew__photo-wrapper
 								picture
@@ -33,7 +34,7 @@ section.slider-rewiews
 													polygon(points="7,0 9,6 14,6 11,9 14,14 7,11.5 0,14 4,9 0,6.6 4,6.6" fill="transparent" stroke="#ed8439" stroke-width="1")
 						p.rewiew__text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 
-			li.rewiews-list__item
+			li.rewiews-list__item.rewiews-list__item--empty
 	.slider-rewiews__dots-down
 		- for(var li = 0; li < 6; li++)
 			button.slider-rewiews__dot(tabindex="0")
