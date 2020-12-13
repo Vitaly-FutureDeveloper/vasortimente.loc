@@ -69,9 +69,11 @@
 
 		background-image: url("../img/arrow_left.png");
 	}
-	&:hover,
-	&:focus{
+	&:hover{
 		transform: translateX(-15px);
+	}
+	&:focus{
+		outline: 1px dashed grey;
 	}
 }
 
@@ -97,9 +99,11 @@
 
 		background-image: url("../img/arrow_right.png");
 	}
-	&:hover,
-	&:focus{
+	&:hover{
 		transform: translateX(15px);
+	}
+	&:focus{
+		outline: 1px dashed grey;
 	}
 }
 

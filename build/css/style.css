@@ -380,10 +380,15 @@ a
 	height: 20px;
 }
 
-.slider-rewiews__prev:focus,.slider-rewiews__prev:hover
+.slider-rewiews__prev:hover
 {
 	-webkit-transform: translateX(-15px);
 	transform: translateX(-15px);
+}
+
+.slider-rewiews__prev:focus
+{
+	outline: 1px dashed grey;
 }
 
 .slider-rewiews__next
@@ -439,10 +444,15 @@ a
 	height: 20px;
 }
 
-.slider-rewiews__next:focus,.slider-rewiews__next:hover
+.slider-rewiews__next:hover
 {
 	-webkit-transform: translateX(15px);
 	transform: translateX(15px);
+}
+
+.slider-rewiews__next:focus
+{
+	outline: 1px dashed grey;
 }
 
 .slider-rewiews__dots-down
