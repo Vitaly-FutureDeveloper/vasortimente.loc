@@ -5,6 +5,8 @@
 	border: 1px solid #ffffff;
 	background-color: #ffffff;
 
+	min-height: 265px;
+
 	cursor: pointer;
 }
 
@@ -45,6 +47,11 @@
 
 .rewiew__text{
 	position: relative;
+
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 26px;
 
 	padding-left: 30px;
 	margin-top: 5px;

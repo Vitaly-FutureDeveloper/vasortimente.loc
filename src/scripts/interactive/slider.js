@@ -27,16 +27,24 @@
 	var dotsWrap = document.querySelector('.slider-rewiews__dots-down');
 
 	function showSlides(n) {
+		var loop = true;
 		/**
 		* Скрывает все слайды
 		* Показывает 1 слайд активным
 		* Показывает соседние слайды неактивными
 		* @param {n} - slideIndex
 		*/
-		if(n > slides.length - OFF_SLIDES)
-			slideIndex = slides.length - OFF_SLIDES;
-		if(n < 1)
-			slideIndex = 1;
+		if(!loop) {
+			if (n > slides.length - OFF_SLIDES)
+				slideIndex = slides.length - OFF_SLIDES;
+			if (n < 1)
+				slideIndex = 1;
+		} else {
+			if (n > slides.length - OFF_SLIDES)
+				slideIndex = 1;
+			if (n < 1)
+				slideIndex = slides.length - OFF_SLIDES;
+		}
 
 		slides.forEach((item) => item.classList.add(SLIDE_NONE));
 		slides.forEach((item) => item.classList.remove(SLIDE_INACTIVE));
@@ -64,6 +72,7 @@
 
 		inactive();
 	}
+	//document.addEventListener('click', () => console.log(slideIndex));
 
 	/*
 	* Скрывает все слайды
@@ -119,6 +128,7 @@
 			currentSlide(i);
 		});
 	}
+
 
 	dotsWrap.addEventListener('click', function (evt) {
 		for (let i = 0; i < dots.length + 1; i++){
