@@ -101,6 +101,8 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
+		transform: translate(-50%, -50%);
+
 		text-align: center;
 
 		width: 18px;
@@ -110,7 +112,6 @@
 		border: 3px solid #c8cede;
 		border-radius: 50%;
 		box-sizing: content-box;
-		transform: translate(-50%, -50%);
 	}
 	&::after{
 		content: "";
@@ -118,6 +119,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
+		transform: translate(-50%, -50%);
 
 		text-align: center;
 
@@ -130,8 +132,6 @@
 		//border: 1px solid #c8cede;
 		border-radius: 50%;
 		box-sizing: content-box;
-		transform: translate(-50%, -50%);
-
 	}
 
 	&:hover::before,
@@ -144,7 +144,7 @@
 	@include buttons;
 
 	position: relative;
-	height: 24px; /* чтобы было от чего отталкиваться */
+	height: 24px; // чтобы было от чего отталкиваться //
 
 	&::before{
 		content: "";

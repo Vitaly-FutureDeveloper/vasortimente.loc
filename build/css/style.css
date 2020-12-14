@@ -1,8 +1,10 @@
-@charset "UTF-8";
-
 @font-face
 {
-	font-family:"Exo 2";font-weight:500;font-style:normal;font-display:swap;src:local("Exo 2"),local("Exo 2 Regular"),local("Exo 2-Regular"),url(fonts/Exo2.0-Regular.otf) format("opentype");
+	font-family: "Exo 2";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: local("Exo 2"),local("Exo 2 Regular"),local("Exo 2-Regular"),url(fonts/Exo2.0-Regular.otf) format("opentype");
 }
 
 @font-face
@@ -544,8 +546,8 @@ a
 	content: "";
 	top: 0;
 	left: 0;
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 10px;
 	border-radius: 50%;
 }
 
@@ -562,10 +564,12 @@ a
 	background: radial-gradient(at top center,#d9dee5,#abafb4) #fff;
 	position: relative;
 	content: "";
-	top: 0;
-	left: 0;
-	width: 22px;
-	height: 22px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 16px;
+	height: 16px;
 	border-radius: 50%;
 	-webkit-box-shadow: 0 3px 7px rgba(0,0,0,.35);
 	box-shadow: 0 3px 7px rgba(0,0,0,.35);
@@ -576,10 +580,12 @@ a
 	background: #fff;
 	position: absolute;
 	content: "";
-	top: 41%;
-	left: 41%;
-	width: 12px;
-	height: 12px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 10px;
+	height: 10px;
 	border-radius: 50%;
 }
 
@@ -1074,6 +1080,8 @@ a
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 	text-align: center;
 	width: 18px;
 	height: 18px;
@@ -1081,8 +1089,6 @@ a
 	border-radius: 50%;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
 }
 
 .scale__block--active .scale__button::after
@@ -1093,6 +1099,8 @@ a
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 	text-align: center;
 	width: 12px;
 	height: 12px;
@@ -1101,8 +1109,6 @@ a
 	border-radius: 50%;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
 }
 
 .scale__block--active .scale__button:focus::before,.scale__block--active .scale__button:hover::before
