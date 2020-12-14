@@ -592,7 +592,7 @@ a
 	padding: 0;
 	list-style: none;
 	display: grid;
-	grid-template-columns: .99fr 1.01fr .99fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	padding: 0 30px;
 }
 
@@ -680,8 +680,8 @@ a
 
 .rewiew-right .rewiews-list__over-shadow
 {
-	background: -webkit-gradient(linear,left top,right top,from(transparent),color-stop(85%,#fff),to(white));
-	background: linear-gradient(to right,transparent 0,#fff 85%,#fff 100%);
+	background: -webkit-gradient(linear,left top,right top,from(transparent),color-stop(84%,#fff),to(white));
+	background: linear-gradient(to right,transparent 0,#fff 84%,#fff 100%);
 }
 
 .rewiews-list__item--active .rewiews-list__under-shadow
@@ -783,6 +783,11 @@ a
 	left: 0;
 	width: 12px;
 	height: 11px;
+}
+
+.rewiews-list__item--inactive .rewiew__text
+{
+	margin-bottom: 8px;
 }
 
 .stars

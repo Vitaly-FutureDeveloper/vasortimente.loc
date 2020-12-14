@@ -2,7 +2,7 @@
 	@include no-list-style;
 
 	display: grid;
-	grid-template-columns: 0.99fr 1.01fr 0.99fr;
+	grid-template-columns: 1fr 1fr 1fr;
 
 	padding: 0 30px;
 
@@ -63,7 +63,7 @@
 	background-image: linear-gradient(to left, transparent 0%, white 95%, white 100%);
 }
 .rewiew-right .rewiews-list__over-shadow{
-	background-image: linear-gradient(to right, transparent 0%, white 85%, white 100%);
+	background-image: linear-gradient(to right, transparent 0%, white 84%, white 100%);
 }
 
 
