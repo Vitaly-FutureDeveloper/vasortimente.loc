@@ -18,6 +18,7 @@
 	transition-timing-function: linear;
 
 	background: transparent;
+	z-index: 2;
 
 	&--none{
 		opacity: 0;
@@ -25,14 +26,13 @@
 	}
 	&--active{
 		box-shadow: 0 20px 40px #dcdee3;
+		background-color: #ffffff;
 		opacity: 1;
-		z-index: 50;
+
 	}
-	&--inactive:not(.rewiews-list__item--empty){
+	&--inactive{ //:not(.rewiews-list__item--empty){
 		filter: grayscale(1);
-		box-sizing: border-box;
-		border-top: 1px solid #c8cede;
-		border-bottom: 1px solid #c8cede;
+		z-index: 1;
 	}
 	@include media-tablet{
 		&--inactive{
@@ -42,10 +42,10 @@
 }
 
 .rewiew-left{
-	transform: translateX(40px);
+	transform: translate(40px, 6px);
 }
 .rewiew-right{
-	transform: translateX(-40px);
+	transform: translate(-40px, 6px);
 }
 
 .rewiews-list__item--inactive .rewiews-list__over-shadow{
@@ -63,7 +63,7 @@
 	background-image: linear-gradient(to left, transparent 0%, white 95%, white 100%);
 }
 .rewiew-right .rewiews-list__over-shadow{
-	background-image: linear-gradient(to right, transparent 0%, white 70%, white 100%);
+	background-image: linear-gradient(to right, transparent 0%, white 85%, white 100%);
 }
 
 

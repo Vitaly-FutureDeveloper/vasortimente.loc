@@ -8,8 +8,20 @@
 	min-height: 265px;
 
 	cursor: pointer;
-}
 
+	z-index: 10;
+}
+.rewiews-list__item--inactive .rewiew{
+	padding: 37px 40px 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 230px;
+
+	border-top: 1px solid #c8cede;
+	border-bottom: 1px solid #c8cede;
+
+	z-index: -10;
+}
 .rewiew__client{
 	display: flex;
 	align-items: flex-start;
