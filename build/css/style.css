@@ -379,7 +379,6 @@ a
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
-	font-family: inherit;
 	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-transition-property: all;
@@ -443,7 +442,6 @@ a
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
-	font-family: inherit;
 	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-transition-property: all;
@@ -517,7 +515,6 @@ a
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
-	font-family: inherit;
 	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-transition-property: all;
@@ -958,9 +955,14 @@ a
 	height: 10px;
 }
 
+.about__button:focus span,.about__button:hover span
+{
+	font-size: 16.1px;
+}
+
 .about__button:focus span::after,.about__button:hover span::after
 {
-	right: -20px;
+	right: -25px;
 }
 
 .scale
@@ -1133,7 +1135,6 @@ a
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
-	font-family: inherit;
 	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-transition-property: all;
@@ -1285,7 +1286,6 @@ a
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
-	font-family: inherit;
 	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-transition-property: all;
@@ -1337,7 +1337,6 @@ a
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
-	font-family: inherit;
 	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-transition-property: all;
